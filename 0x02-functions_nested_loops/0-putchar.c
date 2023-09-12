@@ -1,10 +1,11 @@
 #include "main.h"
 /**
  * main - Entry point
- * is written by Nathaniel
+ *
  * Return : 0
- */
-int main(void)
+ *
+*/
+main(void)
 {
 _putchar('_');
 _putchar('p');
