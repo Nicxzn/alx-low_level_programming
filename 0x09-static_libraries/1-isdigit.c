@@ -1,17 +1,18 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * _isdigit -  function that surveys numbers .
+ * _isdigit - A function that checks for a digit.
  *
- * @c: is the variable to  surveying
+ * @c: is the character to  check
  *
  * Return: 1 if c is a digit otherwise 0
  */
 int _isdigit(int c)
 {
-int d = isdigit(c);
-if (d == 0)
-return (d);
-else
-return (1);
+	int a = isdigit(c);
+
+	if (a == 0)
+		return (a);
+	else
+		return (1);
 }

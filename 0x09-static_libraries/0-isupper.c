@@ -1,17 +1,18 @@
 #include <ctype.h>
 #include "main.h"
 /**
- * _isupper -  function that checks for capital letter character.
+ * _isupper - A function that checks for uppercase character.
  *
- * @c: is the variable(character) to  check
+ * @c: is the character to  check
  *
- * Return: 1 if c is capital letter otherwise 0
+ * Return: 1 if c is uppercase otherwise 0
  */
 int _isupper(int c)
 {
-int b = isupper(c);
-if (b == 0)
-return (b);
-else
-return (1);
+	int a = isupper(c);
+
+	if (a == 0)
+		return (a);
+	else
+		return (1);
 }

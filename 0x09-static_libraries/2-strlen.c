@@ -1,14 +1,17 @@
 #include "main.h"
+
 /**
- * _strlen - function returns length of string
- * @s: is the string to survey
+ * _strlen - returns length of string
+ * @s: string to check
  *
- * Return: integer length of the string
+ * Return: int length of the string
  */
+
 int _strlen(char *s)
 {
-int length = 0;
-while (s[length])
-length++;
-return (length);
+	int length = 0;
+
+	while (s[length])
+		length++;
+	return (length);
 }

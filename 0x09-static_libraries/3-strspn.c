@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _strspn -  funtion Gets the length of a prefix substring.
- * @s: The string  argument to be searched.
+ * _strspn - Gets the length of a prefix substring.
+ * @s: The string to be searched.
  * @accept: The prefix to be measured.
  *
  * Return: The number of bytes in s which
@@ -12,19 +12,19 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
-	int leghth;
+	int index;
 
 	while (*s)
 	{
-		for (index = 0; accept[leghth]; leghth++)
+		for (index = 0; accept[index]; index++)
 		{
-			if (*s == accept[leghth])
+			if (*s == accept[index])
 			{
 				bytes++;
 				break;
 			}
 
-			else if (accept[leghth + 1] == '\0')
+			else if (accept[index + 1] == '\0')
 				return (bytes);
 		}
 
